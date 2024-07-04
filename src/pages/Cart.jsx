@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector,useDispatch } from 'react-redux'
 import { remove ,add } from '../Redux/Cartslice';
 
+
 const Cart = () => {
     const dispatch =useDispatch();
     const cartitems = useSelector((state)=>state.cart)
@@ -26,7 +27,7 @@ const Cart = () => {
                               >
                                 <button
                                 
-                                  className="btn"
+                                  className="btnn"
                                   onClick={() => {
                                     handleremove(item);
                                   }}
@@ -37,7 +38,7 @@ const Cart = () => {
                                 <p className="mx-5">{item.qty}</p>
 
                                 <button
-                                  className="btn"
+                                  className="btnn"
                                   onClick={() => {
                                     addItem(item);
                                   }}
@@ -45,7 +46,7 @@ const Cart = () => {
                                   <i className="fas fa-plus">+</i>
                                 </button>
                               </div>
-            <button className='btn' onClick={()=>handleremove(item.id)}>Remove</button>
+            <button className='btnn' onClick={()=>handleremove(item.id)}>Remove</button>
             </div>
         ))}
     </div>

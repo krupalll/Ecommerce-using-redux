@@ -28,7 +28,7 @@ const Home = () => {
                 <img src={product.image} alt='img'/>
                 <h4>{product.title}</h4>
                 <h5>{product.price}</h5>
-                <button className='btn' onClick={()=>handleadd(product)}>Add to cart</button>
+                <button className='btnn' onClick={()=>handleadd(product)}>Add to cart</button>
              </div>
         ))
        }
