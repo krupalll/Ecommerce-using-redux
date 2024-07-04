@@ -36,7 +36,7 @@ img {
     border: none;
     outline: none;
     background: #764abc;
-    padding: 5px 10px;
+    padding: 7px 10px;
     color: #fff;
     border-radius: 5px;
     font-weight: bold;
@@ -70,4 +70,19 @@ img {
     margin-bottom: 20px;
     padding: 14px;
     border-radius: 5px;
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-center{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

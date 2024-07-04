@@ -24,8 +24,7 @@ const cartSlice = createSlice({
                     return state.filter((x) => x.id !== exist2.id);
                 } else {
                     return state.map((x) =>
-                    x.id === product.id ? { ...x, qty: x.qty - 1 } : x
-                    );
+                    x.id === product.id ? { ...x, qty: x.qty - 1 } : x);
                 }
         }
     }
